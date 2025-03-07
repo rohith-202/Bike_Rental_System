@@ -6,8 +6,8 @@ import { IoMdContact } from "react-icons/io";
 export const Info = () => {
   return (
     <>
-    <div className='flex justify-center h-[660px] border-b-2 border-cyan-400'>
-    <div className='container h-[660px] flex justify-start flex-col border-b-2  border-cyan-400'>
+    <div className='flex justify-center h-[660px]'>
+    <div className='container h-[660px] flex justify-start flex-col '>
         <div className='flex justify-center pt-[6rem] text-3xl font-bold'>
             <span>Take your ride now</span>
         </div>
@@ -15,9 +15,9 @@ export const Info = () => {
         <span>Speedy & Effortless bike rental</span>
         </div>
         <div className='mt-9 ml-20 flex'>
-        <MdSportsMotorsports className='h-36 w-36'/>
-        <IoMdContact className='h-36 w-36 ml-[20rem]'/>
-        <FaMotorcycle className='h-36 w-36 ml-[20rem]'/>
+        <MdSportsMotorsports className='h-36 w-36 text-[#3674B5]'/>
+        <IoMdContact className='h-36 w-36 ml-[17rem] text-[#3674B5]'/>
+        <FaMotorcycle className='h-36 w-36 ml-[18rem] text-[#3674B5]'/>
         </div>
         <div className='mt-4 ml-8 flex justify-between'>
         <div className='w-[18rem] flex flex-col items-center'>

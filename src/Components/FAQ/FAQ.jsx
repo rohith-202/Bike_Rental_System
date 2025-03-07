@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 import bike from '../img/faq.png';
 
 export const FAQ = () => {
@@ -26,7 +27,7 @@ export const FAQ = () => {
 
   return (
     <>
-      <div className='flex h-[660px] border-b-2 border-cyan-400' id='FAQ'>
+      <div className='flex h-[660px]' id='FAQ'>
         <div className='container h-[660px]'>
           <div className='pl-[20rem]'>
             <span className='flex justify-center text-xl font-bold mt-12'>FAQ</span>
@@ -36,25 +37,31 @@ export const FAQ = () => {
           </div>
 
           <div className='flex justify-center flex-row '>
-            <div><img src={bike} alt="Bike" /></div>
-            <div className="flex flex-col   bg-white rounded-lg  items-start shadow-lg mt-20 w-[50rem] h-min">
-                  {faqs.map((faq, index) => (
-                    <div key={index} className={`w-full`}>
-                      <div className={`cursor-pointer p-6 w-full ${openIndex === index ? 'bg-black text-white shadow-xl shadow-red-600' : 'bg-white'}`} onClick={() => {toggle(index)}}>
-                        <div className='flex flex-col  '>
-                        {faq.question}
-                        </div>
-                      </div> 
-                      {openIndex === index && (
-                        <div className="mt-2 p-4  ">
-                          {faq.answer}
-                        </div>
-                      )}
+            <motion.div
+              initial={{ x: -100, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              viewport={{ once: false, amount: 0.3 }} 
+            >
+              <img src={bike} alt="Bike" />
+            </motion.div>
+            <div className="flex flex-col bg-white rounded-lg items-start shadow-lg mt-20 w-[50rem] h-min">
+              {faqs.map((faq, index) => (
+                <div key={index} className={`w-full`}>
+                  <div className={`cursor-pointer p-6 w-full ${openIndex === index ? 'bg-black text-white shadow-xl shadow-blue-200' : 'bg-white'}`} onClick={() => {toggle(index)}}>
+                    <div className='flex flex-col'>
+                      {faq.question}
                     </div>
-                  ))}
+                  </div> 
+                  {openIndex === index && (
+                    <div className="mt-2 p-4">
+                      {faq.answer}
+                    </div>
+                  )}
+                </div>
+              ))}
             </div>
           </div>
-
         </div>
       </div>
     </>

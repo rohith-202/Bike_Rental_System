@@ -10,7 +10,7 @@ import { FaFacebook } from "react-icons/fa6";
 export const Footer = () => {
   return (
     <>
-    <div className='flex h-[330px] border-b-2 border-cyan-400 scroll-mt-20 ' id='Contact'>
+    <div className='flex h-[330px] scroll-mt-20 bg-[#3674B5] text-white ' id='Contact'>
         <div className='flex flex-col w-1/3 '>
             <div className='flex flex-row pt-6'>
                 <span className='pt-4 pl-16'><img src={logo} alt="logo" className='scale-125 ' /></span>

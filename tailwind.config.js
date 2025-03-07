@@ -10,6 +10,11 @@ export default {
         '175': '1.75', 
         '200': '2.00', 
         '250': '2.50',  
+      },fontSize: {
+        '1.5xl': '1.30rem', 
+      },
+      lineHeight: {
+        '1.5xl': '1.75rem', 
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'], 

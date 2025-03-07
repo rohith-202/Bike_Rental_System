@@ -6,8 +6,8 @@ import { RiMotorbikeFill } from "react-icons/ri";
 export const Services = () => {
   return (
     <>
-     <div className='flex justify-center h-[660px] border-b-2 border-cyan-400 scroll-mt-20 ' id='Services'>
-     <div className='container h-[660px] flex justify-start flex-col border-b-2  border-cyan-400'>
+     <div className='flex justify-center h-[660px]  scroll-mt-20 ' id='Services'>
+     <div className='container h-[660px] flex justify-start flex-col '>
         <div className='flex flex-row justify-between h-[660px]'>
             <div className='w-[37em] pt-44'>
                 <div className='flex flex-col'>
@@ -18,9 +18,9 @@ export const Services = () => {
             </div>
                 <div className='w-[37em] pl-48 flex flex-row'>
                     <div className='flex flex-col mt-36 mr-8'>    
-                    <FaHourglass className='h-14 w-14 mt-2'/>
-                    <SlCalender className='h-14 w-14 mt-14'/>
-                    <RiMotorbikeFill className='h-14 w-14 mt-14'/>
+                    <FaHourglass className='h-14 w-14 mt-2 text-[#124466]'/>
+                    <SlCalender className='h-14 w-14 mt-14 text-[#124466]'/>
+                    <RiMotorbikeFill className='h-14 w-14 mt-14 text-[#124466]'/>
                     </div>
                 <div className='flex flex-col '>
                     <span className='flex flex-col h-[12em] pt-[8.5rem] text-xl'>

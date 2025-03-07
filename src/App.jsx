@@ -10,24 +10,26 @@ import Bike from "./Pages/Bike";
 import Scooter from "./Pages/Scooter";
 import SportsBike from "./Pages/SportsBike";
 import MediumBike from "./Pages/MediumBike";
+import Booking from "./Pages/Booking";
 import Contact from "./Components/Footer/Footer";
+import Payment from "./Pages/Payment";
+import LoginPage from "./Pages/LoginPage";
 
 const App = () => {
-  const location = useLocation();
-  
-  const isBikePage = location.pathname === "/Bike";
-
   return (
     <>
      <Routes>
         <Route path="/" element={<><Navbar /><Home /><Info /><Save /><Services /><FAQ /><Contact /></>} />
         <Route path="/Bike" element={<Bike />} />
-        <Route path="/Services" element={<Services />} />
-        <Route path="/Contact" element={<Contact />} />
         <Route path="/Scooters" element={<Scooter />} />
         <Route path="/MediumCCBikes" element={<MediumBike />} />
         <Route path="/SportsBikes" element={<SportsBike />} />
-      </Routes>
+        <Route path="/Booking" element={<Booking />} />
+        <Route path="/Booking" element={<Booking />} />
+        <Route path="/Payment" element={<Payment />} />
+        <Route path="/LoginPage" element={<LoginPage/>} />
+      </Routes> 
+      
     </>
   );
 };

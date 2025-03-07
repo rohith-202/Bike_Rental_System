@@ -39,7 +39,7 @@ export const Navbar = () => {
 
   return (
     <>
-      <nav className='shadow-xl flex justify-center bg-[#3674B5] sticky top-0 z-10'>
+      <nav className='shadow-xl flex justify-center bg-[#3674B5] sticky top-0 z-50'>
         <div className="container">
           <div className="flex justify-between items-center">
             <div className='flex items-center grid-cols-2 gap-0'>
@@ -62,10 +62,12 @@ export const Navbar = () => {
             </div>
             <div className='hidden md:block text-lg font-medium'>
               <div className='flex items-center gap-2'>
-                <button className='hover:border-b-2 hover:text-white hover:border-white text-white transition-colors duration-300'>
+                <button className='hover:border-b-2 hover:text-white hover:border-white text-white transition-colors duration-300'
+                onClick={()=>navigate("/LoginPage")}>
                   Sign In
                 </button>
-                <button className='hover:text-[#000080] transition-colors duration-300 rounded-xl  p-2 m-0 bg-[#A1E3F9] text-[#1a518b] px-5 hover:shadow-lg'>
+                <button className='hover:text-[#000080] transition-colors duration-300 rounded-xl  p-2 m-0 bg-[#A1E3F9] text-[#1a518b] px-5 hover:shadow-lg' onClick={()=>{
+                  navigate("/LoginPage",{state:{Register : true}})}}>
                   Register
                 </button>
               </div>
