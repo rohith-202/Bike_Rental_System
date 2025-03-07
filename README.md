@@ -5,10 +5,8 @@ The **Bike Rental System** is a web-based application that allows users to rent 
 
 ## 🔥 Features
 - User Authentication (Register, Login, Logout)
-- JWT-based authentication for security
 - Browse and rent bikes
 - Responsive UI for all devices
-- Admin panel to manage bikes and users
 - Payment integration (Upcoming feature)
 
 ## 🛠️ Tech Stack
@@ -21,7 +19,6 @@ The **Bike Rental System** is a web-based application that allows users to rent 
 - Node.js
 - Express.js
 - MongoDB (Mongoose ODM)
-- JWT Authentication
 
 ### **Other Tools:**
 - Axios for API calls
@@ -88,7 +85,7 @@ Feel free to submit issues and pull requests! To contribute:
 This project is licensed under the MIT License.
 
 ## 📩 Contact
-For any inquiries, reach out via [your email] or open an issue in this repository.
+For any inquiries, reach out via rentalqueryr20@gmail.com or open an issue in this repository.
 
 Happy Coding! 🚀
 
