@@ -22,8 +22,12 @@ export const Footer = () => {
         <div className='text-2xl font-bold'>Contact</div>
             <div className='flex flex-col '>
                 <div className='pt-4 flex flex-row'><span className='pt-3'><FaLocationDot className='w-6 h-6 '/></span><span className='pl-2 font-medium'>No 7, Kamadhenu Nagar, Pollachi Main Road, Eachanari</span></div>
-                <div className='py-6 flex flex-row font-medium'><BiSolidPhoneCall className='w-6 h-6'/><span className='pl-2 font-medium'>+91 987654321</span></div>
-                <div className=' flex flex-row'><IoMdMail className='w-6 h-6'/><span className='pl-2 font-medium'>shelbysgarage@gmail.com</span></div>
+                <div className='py-6 flex flex-row font-medium'>
+                   <a href="tel:+91987654321" className='flex flex-row'> <BiSolidPhoneCall className='w-6 h-6'/><span className='pl-2 font-medium'>+91 987654321</span></a>
+                    </div>
+                <div className=' flex flex-row'>
+                    <a href="mailto:shelbysgarage@gmail.com" className='flex flex-row'><IoMdMail className='w-6 h-6'/><span className='pl-2 font-medium'>shelbysgarage@gmail.com</span></a>
+                </div>
             </div>
         </div>
         <div className='flex p-6 pl-12 w-1/3 '>
@@ -35,9 +39,15 @@ export const Footer = () => {
                     <span className='text-lg font-normal pt-2'>Sun - Closed </span>
                     <span className='text-2xl font-bold pt-4'>Follow Us</span>
                     <div className='flex flex-row pt-4 '>
-                        <div ><FaInstagram className='w-6 h-6'/></div>
-                        <div className='px-4'><FaFacebook className='w-6 h-6'/></div>
-                        <div><FaXTwitter className='w-6 h-6'/></div>
+                        <div >
+                            <a href="https://www.instagram.com/" target='_blank'><FaInstagram className='w-6 h-6'/></a>
+                            </div>
+                        <div className='px-4'>
+                           <a href="https://www.facebook.com/" target='_blank'><FaFacebook className='w-6 h-6'/></a>
+                            </div>
+                        <div>
+                            <a href="https://www.twitter.com/" target='_blank'><FaXTwitter className='w-6 h-6'/></a>
+                            </div>
                     </div>
                 </div>
                 <div></div>

@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import Homebike from '../img/Background.png';
 import { useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 
  const Home = () => {
   const navigate = useNavigate();
@@ -46,7 +47,14 @@ import { useState, useEffect } from 'react';
       )}
         <div className=' h-[640px]'>
           <div className='grid grid-cols-1 sm:grid-cols-2 h-[520px]'>
-            <span><img src={Homebike} alt="bike" className='scale-175  ml-48 -z-10' /></span>
+            <motion.div
+              initial={{ x: -100, opacity: 0 }}
+              whileInView={{ x: -30, opacity: 1 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              viewport={{ once: false, amount: 0.3 }} 
+            >
+              <img src={Homebike} alt="bike" className='scale-175  ml-48 -z-10' />
+            </motion.div>
             <span className='p-4 pt-32 pl-20'>
               <div className='order-1 sm:order-2'>
                 <span className='text-2xl font-roboto font-bold '>
